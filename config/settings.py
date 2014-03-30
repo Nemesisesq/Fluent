@@ -13,7 +13,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -22,7 +21,7 @@ SECRET_KEY = '60^r#e=0s4(9t8r^@7ua%-ncv6de-n#a-pr2g@4l#khpt%kkj0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+GEARS_DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -35,6 +34,15 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.media",
 ]
 
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'hamlpy.template.loaders.HamlPyFilesystemLoader',
+    'hamlpy.template.loaders.HamlPyAppDirectoriesLoader',
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -45,6 +53,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_gears',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,3 +119,27 @@ EMAIL_HOST_PASSWORD = 'lift2013'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+GEARS_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
+GEARS_DIRS = (
+    os.path.join(PROJECT_ROOT, 'assets'),
+)
+
+GEARS_COMPILERS = {
+    '.less': 'gears_less.LESSCompiler',
+    '.coffee': 'gears_coffeescript.CoffeeScriptCompiler',
+    '.hbs': 'gears_handlebars.HandlebarsCompiler'
+}
+
+GEARS_PUBLIC_ASSETS = (
+    lambda path: not any(path.endswith(ext) for ext in ('.css', '.js')),
+    r'^css/style\.css$',
+    r'^vendor/css/style\.css$',
+    r'^js/script\.js$',
+    r'^vendor/js/script\.js$',
+)
+
+GEARS_FINGERPRINTING = False

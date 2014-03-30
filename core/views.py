@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
-from Main.forms import ContactForm
-from Main.models import Customer, Ambassador, Campaign, Point
+from forms import ContactForm
+from models import Customer, Ambassador, Campaign, Point
 from django.core.mail import send_mail
 # Create your views here.
 
@@ -79,7 +79,7 @@ class PointsDeleteView(DeleteView):
 
 
 class ContactFormView(FormView):
-    template_name = 'Main/contact.html'
+    template_name = 'core/contact.html'
     form_class = ContactForm
     success_url = '/'
 

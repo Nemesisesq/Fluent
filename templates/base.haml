@@ -1,0 +1,26 @@
+- load gears
+!!! 5
+
+%html{lang:"en"}
+  %head
+    %meta{charset:"utf-8"}
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
+
+    - css_asset_tag 'vendor/css/style.css'
+    - css_asset_tag 'css/style.css'
+
+    - js_asset_tag 'vendor/js/script.js'
+
+    %title
+      - block title
+
+%body
+  - block content
+
+- js_asset_tag 'js/script.js'
+
+blue 96 168 227
+
+green 7 177 81
+
+brown 202 113 45
