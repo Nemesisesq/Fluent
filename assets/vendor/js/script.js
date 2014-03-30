@@ -4,4 +4,3 @@
 //= require modernizr
 //= require placeholder
 //= require foundation.min
-//= require_tree foundation

@@ -10,17 +10,73 @@
     - css_asset_tag 'css/style.css'
 
     - js_asset_tag 'vendor/js/script.js'
+    %script{src:"//use.edgefonts.net/nixie-one.js"}
 
     %title
       - block title
 
 %body
-  - block content
+  .row
+    .large-12.columns
+      %nav.container.top-bar{data-topbar:""}
+        %ul.title-area
+          %li.name
+            %h1
+              %a{href:"#"} Fluent
+
+        %section.top-bar-section
+          %ul.left
+            %li.has-dropdown
+              %a{href:"#customer"} Customer
+              %ul.dropdown
+                %li
+                  %a{href:"/new_customer/"} New
+                %li
+                  %a{href:"/update_customer/"} Update
+                %li
+                  %a{href:"/delete_customer/"} Delete
+
+            %li.has-dropdown
+              %a{href:"#"} Campaign
+              %ul.dropdown
+                %li
+                  %a{href:"/new_campaign/"} New
+                %li
+                  %a{href:"/update_campaign/"} Update
+                %li
+                  %a{href:"/delete_campaign/"} Delete
+
+            %li.has-dropdown
+              %a{href:"#"} Ambassador
+              %ul.dropdown
+                %li
+                  %a{href:"/new_ambassador/"} New
+                %li
+                  %a{href:"/update_ambassador/"} Update
+                %li
+                  %a{href:"/delete_ambassador/"} Delete
+
+            %li.has-dropdown
+              %a{href:"#"} Points
+              %ul.dropdown
+                %li
+                  %a{href:"/new_points/"} New Points
+                %li
+                  %a{href:"/update_points/"} Update Points
+                %li
+                  %a{href:"/delete_points/"} Delete Points
+
+            %li
+              %a{href:"/contact/"} Contact Us
+
+  .row
+    .large-12.columns
+      .container.content
+        - block content
+
+  .row
+    .large-12.columns
+      .container.footer
+        &copy; Agile Hog LLC. 2013
 
 - js_asset_tag 'js/script.js'
-
-blue 96 168 227
-
-green 7 177 81
-
-brown 202 113 45
