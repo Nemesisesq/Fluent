@@ -3,7 +3,8 @@ from core.views import *
 
 urlpatterns = patterns('',
      url(r'contact/', ContactFormView.as_view()),
-     
+     url(r'^pitch/', TemplateView.as_view(template_name='reveal.js-2.6.1/index.html')),
+
      url(r'new_customer/', CustomerCreateView.as_view()),
      url(r'new_campaign/', CampaignCreateView.as_view()),
      url(r'new_ambassador/', AmbassadorCreateView.as_view()),
