@@ -9,6 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
                        # Examples:
                        url(r'^$', TemplateView.as_view(template_name='Main/home.html')),
+                       url(r'^pitch/', TemplateView.as_view(template_name=))
                        url(r'^contact/', ContactFormView.as_view()),
                        # url(r'^blog/', include('blog.urls')),
 
