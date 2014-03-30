@@ -71,6 +71,7 @@ class PointsUpdateView(UpdateView):
     fields = ['campaign', 'ambassador', 'points']
     template_name_suffix = '_update_form'
 
+
 class PointsDeleteView(DeleteView):
     model = Point
     fields = ['campaign', 'ambassador', 'points']
