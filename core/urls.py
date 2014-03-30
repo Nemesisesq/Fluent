@@ -1,9 +1,9 @@
 from django.conf.urls import patterns, include, url
 from core.views import *
+from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
      url(r'contact/', ContactFormView.as_view()),
-     url(r'^pitch/', TemplateView.as_view(template_name='reveal.js-2.6.1/index.html')),
 
      url(r'new_customer/', CustomerCreateView.as_view()),
      url(r'new_campaign/', CampaignCreateView.as_view()),
