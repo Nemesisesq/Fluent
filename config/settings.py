@@ -44,7 +44,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Main',
+    'core',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,9 +56,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'Fluent.urls'
+ROOT_URLCONF = 'config.urls'
 
-WSGI_APPLICATION = 'Fluent.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
