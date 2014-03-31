@@ -1,5 +1,6 @@
 from django import forms
 
+
 __author__ = 'nem'
 
 
@@ -10,3 +11,5 @@ class ContactForm(forms.Form):
     message = forms.CharField(label='Message', widget=forms.Textarea(attrs={'rows': '4'}))
 
     cc_myself = forms.BooleanField(required=False)
+
+
