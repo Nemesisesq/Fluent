@@ -7,13 +7,30 @@ body {
     font-family: nixie-one, serif;
 }
 
+a, button, .button {
+    font-family: nixie-one, serif;
+    font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: nixie-one, serif;
   font-weight: normal;
 }
 
+.fi-xsmall { font-size: 8px; }
+.fi-small { font-size: 16px; }
+.fi-medium { font-size: 32px; }
+.fi-large { font-size: 64px; }
+.fi-xlarge { font-size: 128px; }
+
+.fi-inline { display: inline; }
+
 .top-bar-section ul li > a {
   font-family: nixie-one, serif;
+}
+
+img.logo {
+    height: 32px;
 }
 
 .container {
@@ -27,14 +44,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home {
-    .blue {
-        background-color: @blue;
-        height: 300px;
+    img.app-store {
+        height: 32px;
     }
 
-    .green {
+    .marketing {
+        background-color: @blue;
+        color: white;
+        padding: 80px 0px;
+
+        .callout {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            text-shadow: 0px 1px 1px black;
+        }
+
+        input, .button {
+            border: 1px solid darken(@green, 10%);
+        }
+
+        .button {
+            background: @green;
+            border-left: none;
+        }
+    }
+
+    .business-cta {
+        padding-left: 10px;
         background-color: @green;
-        height: 300px;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            margin-top: 0px;
+            padding: 10px 0px 0px 10px;
+        }
+
+        .button {
+            margin-bottom: 0px;
+        }
+    }
+
+    .how-it-works {
+        padding: 40px 20px;
+        background-color: white;
+        color: black;
+
+        h2 {
+            color: black;
+            text-shadow: 0px 1px 1px #ccc;
+        }
     }
 
     .white {
