@@ -2,40 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cb40d01-1b77-4211-aaca-aa09d2e63a74" name="Default" comment="first commit from git">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/_login_sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/_signup_sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/core/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email_confirm.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/email_confirmation_message.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email_confirmation_sent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/email_confirmation_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email_confirmed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/invite_user.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/invite_user_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/logout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/password_change.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/password_change.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/password_change_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/password_reset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/password_reset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/password_reset_sent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/email/password_reset_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/password_reset_token.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/password_reset_token_fail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/settings.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/signup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/signup_closed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/admin.py" afterPath="$PROJECT_DIR$/core/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/forms.py" afterPath="$PROJECT_DIR$/core/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/models.py" afterPath="$PROJECT_DIR$/core/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/static/img/app_store.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/vendor/fonts/foundation-icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/vendor/fonts/foundation-icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/vendor/fonts/foundation-icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/static/img/logo-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/static/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/core/business.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/vendor/css/foundation-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/vendor/fonts/foundation-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.haml" afterPath="$PROJECT_DIR$/templates/base.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fluent.less" afterPath="$PROJECT_DIR$/assets/css/fluent.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/core/home.haml" afterPath="$PROJECT_DIR$/templates/core/home.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.py" afterPath="$PROJECT_DIR$/config/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/vendor/css/style.css" afterPath="$PROJECT_DIR$/assets/vendor/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/urls.py" afterPath="$PROJECT_DIR$/config/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/urls.py" afterPath="$PROJECT_DIR$/core/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/views.py" afterPath="$PROJECT_DIR$/core/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Fluent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +47,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
@@ -70,7 +56,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="14" column="46" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -78,10 +64,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4769231" vertical-offset="864" max-vertical-offset="1854">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="0" selection-start="2817" selection-end="2817" vertical-scroll-proportion="0.0" vertical-offset="2241" max-vertical-offset="2826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
@@ -124,6 +139,7 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/reveal.js-2.6.1/index.html" />
         <option value="$PROJECT_DIR$/Fluent/urls.py" />
+        <option value="$PROJECT_DIR$/config/settings.py" />
         <option value="$PROJECT_DIR$/core/urls.py" />
       </list>
     </option>
@@ -179,6 +195,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Fluent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fluent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fluent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fluent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fluent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,8 +537,8 @@
     <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -576,9 +624,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7722" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.27787307" vertical-offset="0" max-vertical-offset="583">
+        <state line="9" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="2817" selection-end="2817" vertical-scroll-proportion="0.0" vertical-offset="2241" max-vertical-offset="2826">
           <folding />
         </state>
       </provider>
@@ -592,17 +654,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="14" column="46" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/forms.py">
+    <entry file="file://$PROJECT_DIR$/core/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4769231" vertical-offset="864" max-vertical-offset="1854">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

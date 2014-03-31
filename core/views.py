@@ -36,7 +36,7 @@ class CampaignUpdateView(UpdateView):
     template_name_suffix = '_update_form'
 
 
-class CampaignrDeleteView(DeleteView):
+class CampaignDeleteView(DeleteView):
     model = Campaign
     fields = ['company', 'money_pool', 'description']
     template_name_suffix = '_delete_form'
