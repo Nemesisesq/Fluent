@@ -32,7 +32,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
-    "account.context_processors.account",
+    #"account.context_processors.account",
 ]
 
 # List of callables that know how to import templates from various sources.
@@ -56,7 +56,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'core',
     'django_gears',
-    'account',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,8 +65,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "account.middleware.LocaleMiddleware",
-    "account.middleware.TimezoneMiddleware",
+    #"account.middleware.LocaleMiddleware",
+    #"account.middleware.TimezoneMiddleware",
 )
 
 ROOT_URLCONF = 'config.urls'
