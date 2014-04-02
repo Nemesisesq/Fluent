@@ -19,7 +19,7 @@
 
 
     %form.survey{action:"/survey/{{signup_id}}/", method:"POST"}
-      = csrf_token
+      {% csrf_token %}
 
       .row
         .large-12.columns
@@ -54,7 +54,7 @@
         .large-12.columns
           %label
             How much money have you spent in online marketing last year?
-            %select{name:"customers"}
+            %select{name:"spend"}
               %option{value:"50"} Less than $100
               %option{value:"550"} Between $100 and $1,000
               %option{value:"5550"} Between $1,000 and $10,000
