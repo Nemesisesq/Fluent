@@ -2,6 +2,18 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 
+class MailingListSignup(models.Model):
+    email = models.EmailField()
+    business = models.BooleanField(default=False)
+    category = models.CharField(max_length=300)
+    customer_size = models.IntegerField()
+    online_spend = models.IntegerField()
+    spend_commitment = models.IntegerField()
+
+    def __unicde__(self):
+        return self.email
+
+
 # Create your models here.
 class Customer(models.Model):
     company_name = models.CharField(max_length=100, blank=True, null=True)

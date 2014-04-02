@@ -1,7 +1,7 @@
 - extends 'base.html'
 
 - block content
-  .home
+  .business
     .marketing
       .row
         .large-4.columns
@@ -11,17 +11,20 @@
             %h2 Fluent rewards your customers for promoting your business online.
 
             .signup
-              .row.collapse
-                .large-10.mobile-three.columns
-                  %input#signup{type:"text", name:"signup", placeholder:"jane.snow@youremail.com"}
-                .large-2.mobile-one.columns
-                  %a#signup-btn.button.expand.postfix{type:"submit"}
-                    .fi-mail.fi-small.fi-inline
-                    Signup
+              %form{action:"/signup/", method:"POST"}
+                {% csrf_token %}
+                .row.collapse
+                  .large-10.mobile-three.columns
+                    %input#signup{type:"text", name:"signup", placeholder:"jane.snow@youremail.com"}
+                    %input{type:"hidden", name:'business', value:"true"}
+                  .large-2.mobile-one.columns
+                    %a#signup-btn.button.expand.postfix{type:"submit"}
+                      .fi-mail.fi-small.fi-inline
+                      Signup
 
             .call-to-action
-              %a{href:"https://play.google.com/store/search?q=pub:Get Fluent LLC"}
-                %img.app-store{alt:"Get it on Google Play", src:"https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}
+              /%a{href:"https://play.google.com/store/search?q=pub:Get Fluent LLC"}
+              %img.app-store{alt:"Get it on Google Play", src:"https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}
 
               %img.app-store{alt:"Available on the App Store", src:"/static/img/app_store.png"}
 
@@ -31,9 +34,50 @@
           %h2
             How it all works...
 
-            %ol
-              %li Determine a reward level and invite your most loyal customers to join your campaign.
-              %li Your influencers tell their friends and family things they like about your business online.
-              %li We measure the impact your influncers have on their friends and family.
-              %li We reward everyone that participates with a fair share of in-store credit, gift-cards, swag, and more...
-              %li Your influencers return to your store to use their credit, and bring their friends along for the ride.
+      .row
+        .large-2.columns.num
+          1
+        .large-10.columns
+          .desc
+            .text
+              Starting a campaign is easy. Signup and pick one of four campaign levels. We recommend starting small with a campaign of $250 and 10 customers.
+
+      .row
+        .large-2.columns.num
+          2
+        .large-10.columns
+          .desc
+            .text
+              Ask your most loyal customers to download the mobile app and join your campaign as "influencers". When you are just getting started you should pick people who frequently do business with you and that you know by name.
+
+      .row
+        .large-2.columns.num
+          3
+        .large-10.columns
+          .desc
+            .text
+              Once your customers join your campaign they can start telling their friends and family about you and their positive experiences with your business online.
+
+      .row
+        .large-2.columns.num
+          4
+        .large-10.columns
+          .desc
+            .text
+              We'll measure the impact your influencers are making and give you an overview on how your entire campaign is fairing.
+
+      .row
+        .large-2.columns.num
+          5
+        .large-10.columns
+          .desc
+            .text
+              After a month your campaign ends. Depending on each influencer's individual impact we'll issue rewards in the form of in-store from the reward pool you selected at the start of the campaign.
+
+      .row
+        .large-2.columns.num
+          6
+        .large-10.columns
+          .desc
+            .text
+              Your influencers can then return to your store to claim their rewards, which you'll accept using the Fluent mobile app. You'll then be able to reuse your reward money for future campaigns.
