@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from forms import ContactForm
-from models import Customer, Ambassador, Campaign, Point
+from models import Customer, Ambassador, Campaign, Point, Signup
 from django.core.mail import send_mail
 # Create your views here.
 
+from django.http import HttpResponseNotFound
+from django.shortcuts import render_to_response, get_object_or_404
+from django.template import RequestContext
 
 class CustomerCreateView(CreateView):
     model = Customer
@@ -96,3 +99,33 @@ class ContactFormView(FormView):
 
         send_mail(subject, message, sender, recipients)
         return super(ContactFormView, self).form_valid(form)
+
+
+def signup(request):
+    if request.method != "POST":
+        return HttpResponseNotFound()
+
+    signup = Signup()
+    signup.email = request.POST['email'] 
+    signup.business = (request.POST['business'] == "true")
+    signup.save()
+
+    if signup.business:
+        return render_to_response('core/business_signup_success.html', 
+            {'signup_id': signup.pk}, context_instance=RequestContext(request))
+    else:
+        return render_to_response('core/signup_success.html')
+
+def survey(request, signup_id):
+
+    if request.method != "POST":
+        return HttpResponseNotFound()
+
+    signup = get_object_or_404(Signup, pk=signup_id)
+    signup.category = request.POST['category']
+    signup.customer_size = request.POST['customers']
+    signup.online_spend = request.POST['spend']
+    signup.spend_commitment = request.POST['commitment']
+    signup.save()
+
+    return render_to_response('core/business_survey_success.html')

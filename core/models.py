@@ -2,6 +2,17 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 
+class Signup(models.Model):
+    email = models.EmailField()
+    business = models.BooleanField(default=False)
+    category = models.CharField(max_length=300)
+    customer_size = models.IntegerField(default=0)
+    online_spend = models.IntegerField(default=0)
+    spend_commitment = models.IntegerField(default=0)
+
+    def __unicode__(self):
+        return self.name
+
 # Create your models here.
 class Customer(models.Model):
     company_name = models.CharField(max_length=100, blank=True, null=True)
@@ -11,10 +22,6 @@ class Customer(models.Model):
 
     def __unicode__(self):
         return self.company_name
-
-    def get_absolute_url(self):
-        return reverse('dashboard')
-
 
 class Ambassador(models.Model):
     name = models.ForeignKey(User)
@@ -29,10 +36,6 @@ class Ambassador(models.Model):
     def __unicode__(self):
         return ('%s %s') % (self.name.first_name, self.name.last_name)
 
-    def get_absolute_url(self):
-        return reverse('dashboard')
-
-
 class Campaign(models.Model):
     company = models.ForeignKey(Customer, null=True, blank=True)
     money_pool = models.IntegerField(null=True, blank=True)
@@ -42,10 +45,6 @@ class Campaign(models.Model):
     def __unicode__(self):
         return ('%s %s campaign' ) % (self.company.company_name, self.id)
 
-    def get_absolute_url(self):
-        return reverse('dashboard')
-
-
 class Point(models.Model):
     campaign = models.ForeignKey(Campaign)
     ambassador = models.ForeignKey(Ambassador)
@@ -54,6 +53,3 @@ class Point(models.Model):
 
     def __unicode__(self):
         return ('%s points earned for %s') % (self.points, self.campaign)
-
-    def get_absolute_url(self):
-        return reverse('dashboard')

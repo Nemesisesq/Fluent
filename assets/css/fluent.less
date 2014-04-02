@@ -88,7 +88,76 @@ img.logo {
     }
 
     .how-it-works {
-        padding: 40px 20px;
+        padding: 40px 20px 120px 20px;
+        background-color: white;
+        color: black;
+
+        h2 {
+            color: black;
+            text-shadow: 0px 1px 1px #ccc;
+        }
+
+        .num {
+            margin: 80px 0px 0px 20px;
+            padding-left: 46px;
+            width: 128px;
+            height: 128px;
+            border-radius: 3px;
+            background-color: @green;
+            font-size: 144px;
+            font-weight: 600;
+            font-family: Verdana, san-serif;
+            color: white;
+            text-align:center;
+        }
+
+        .desc {
+            margin-top: 80px;
+            display: table;
+            height: 128px;
+            padding: 5px;
+
+            .text {
+                display: table-cell;
+                vertical-align: bottom;
+                font-size: 23px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+.business {
+    img.app-store {
+        height: 32px;
+    }
+
+    .marketing {
+        background-color: @green;
+        color: white;
+        padding: 80px 0px;
+
+        .callout {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            text-shadow: 0px 1px 1px black;
+        }
+
+        input, .button {
+            border: 1px solid darken(@blue, 10%);
+        }
+
+        .button {
+            background: @blue;
+            border-left: none;
+        }
+    }
+
+    .how-it-works {
+        padding: 40px 20px 120px 20px;
         background-color: white;
         color: black;
 
@@ -126,9 +195,27 @@ img.logo {
         }
     }
 
-    .white {
+    .survey {
+        margin-top: -80px;
+        margin-bottom: 0px;
+        padding: 20px;
         background-color: white;
-        height: 300px;
+
+        select {
+            height: 48px;
+        }
+
+        label {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            margin-top: 40px;
+            color: black;
+            border: 1px solid darken(@blue, 10%);
+        }
     }
 }
 

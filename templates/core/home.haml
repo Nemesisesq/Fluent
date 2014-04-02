@@ -11,17 +11,18 @@
             %h2 Fluent rewards you for promoting your favorite <strong>local</strong> brands online.
 
             .signup
-              .row.collapse
-                .large-10.mobile-three.columns
-                  %input#signup{type:"text", name:"signup", placeholder:"jane.snow@youremail.com"}
-                .large-2.mobile-one.columns
-                  %a#signup-btn.button.expand.postfix{type:"submit"}
-                    .fi-mail.fi-small.fi-inline
-                    Signup
+              %form{action:"/signup/", method:"POST"}
+                {% csrf_token %}
+                .row.collapse
+                  .large-10.mobile-three.columns
+                    %input#signup{type:"text", name:"email", placeholder:"jane.snow@youremail.com"}
+                    %input{type:"hidden", name:'business', value:"false"}
+                  .large-2.mobile-one.columns
+                    %input.button.expand.postfix{type:"submit", value:"Signup"}
 
             .call-to-action
-              %a{href:"https://play.google.com/store/search?q=pub:Get Fluent LLC"}
-                %img.app-store{alt:"Get it on Google Play", src:"https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}
+              /%a{href:"https://play.google.com/store/search?q=pub:Get Fluent LLC"}
+              %img.app-store{alt:"Get it on Google Play", src:"https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"}
 
               %img.app-store{alt:"Available on the App Store", src:"/static/img/app_store.png"}
 

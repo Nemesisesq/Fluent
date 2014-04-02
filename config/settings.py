@@ -33,6 +33,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     #"account.context_processors.account",
+    "django.core.context_processors.request",
 ]
 
 # List of callables that know how to import templates from various sources.
@@ -47,17 +48,17 @@ TEMPLATE_LOADERS = (
 # Application definition
 
 INSTALLED_APPS = (
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
     'django_gears',
-    'accounts',
     'debug_toolbar',
-
+    'accounts',
+    'core',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,8 +111,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static')),
 
 STATICFILE_FINDERS = (
-    "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django.contrib.staticfiles.finders.FileSystemFinder",
 )
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'))
