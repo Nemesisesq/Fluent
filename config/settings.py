@@ -49,13 +49,15 @@ TEMPLATE_LOADERS = (
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
     'django_gears',
+    'accounts',
+    'debug_toolbar',
+
 )
 
 MIDDLEWARE_CLASSES = (
