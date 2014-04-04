@@ -45,7 +45,17 @@ class Campaign(models.Model):
     def __unicode__(self):
         return ('%s %s campaign' ) % (self.company.company_name, self.id)
 
-class Point(models.Model):
+class FacebookPoint(models.Model):
+    campaign = models.ForeignKey(Campaign)
+    ambassador = models.ForeignKey(Ambassador)
+    points = models.IntegerField(null=True, blank=True)
+    created = models.DateTimeField(auto_now=True)
+
+    def __unicode__(self):
+        return ('%s points earned for %s') % (self.points, self.campaign)
+
+
+class TwitterPoint(models.Model):
     campaign = models.ForeignKey(Campaign)
     ambassador = models.ForeignKey(Ambassador)
     points = models.IntegerField(null=True, blank=True)

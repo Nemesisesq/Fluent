@@ -5,5 +5,6 @@ from core.models import *
 admin.site.register(Campaign, admin.ModelAdmin)
 admin.site.register(Customer, admin.ModelAdmin)
 admin.site.register(Ambassador, admin.ModelAdmin)
-admin.site.register(Point, admin.ModelAdmin)
+admin.site.register(FacebookPoint, admin.ModelAdmin)
+admin.site.register(TwitterPoint, admin.ModelAdmin)
 admin.site.register(Signup, admin.ModelAdmin)
