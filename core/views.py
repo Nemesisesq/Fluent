@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
 from forms import ContactForm
-from models import Customer, Ambassador, Campaign, Point, Signup
+from models import Customer, Ambassador, Campaign, FacebookPoint, Signup
 from django.core.mail import send_mail
 # Create your views here.
 
@@ -64,19 +64,19 @@ class AmbassadorDeleteView(DeleteView):
 
 
 class PointsCreateView(CreateView):
-    model = Point
+    model = FacebookPoint
     fields = ['campaign', 'ambassador', 'points']
     template_name_suffix = '_create_form'
 
 
 class PointsUpdateView(UpdateView):
-    model = Point
+    model = FacebookPoint
     fields = ['campaign', 'ambassador', 'points']
     template_name_suffix = '_update_form'
 
 
 class PointsDeleteView(DeleteView):
-    model = Point
+    model = FacebookPoint
     fields = ['campaign', 'ambassador', 'points']
     template_name_suffix = '_delete_form'
 
