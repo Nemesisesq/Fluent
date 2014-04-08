@@ -45,6 +45,7 @@ class Campaign(models.Model):
     def __unicode__(self):
         return ('%s %s campaign' ) % (self.company.company_name, self.id)
 
+
 class FacebookPoint(models.Model):
     campaign = models.ForeignKey(Campaign)
     ambassador = models.ForeignKey(Ambassador)
